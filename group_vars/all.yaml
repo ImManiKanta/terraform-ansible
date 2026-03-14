@@ -1,11 +1,11 @@
 ansible_user: ec2-user
-ansible_password: DevOps321
-MONGODB_HOST: mongodb-dev.manidevops.online
-CATALOGUE_HOST: catalogue-dev.manidevops.online
-REDIS_HOST: redis-dev.manidevops.online
-USER_HOST: user-dev.manidevops.online
-CART_HOST: cart-dev.manidevops.online
-MYSQL_HOST: mysql-dev.manidevops.online
-SHIPPING_HOST: shipping-dev.manidevops.online
-RABBITMQ_HOST: rabbitmq-dev.manidevops.online
-PAYMENT_HOST: payment-dev.manidevops.online
+ansible_password: "DevOps321"
+MONGODB_HOST: mongodb-"{{ env }}".manidevops.online
+CATALOGUE_HOST: catalogue-"{{ env }}".manidevops.online
+REDIS_HOST: redis-"{{ env }}".manidevops.online
+USER_HOST: user-"{{ env }}".manidevops.online
+CART_HOST: cart-"{{ env }}".manidevops.online
+MYSQL_HOST: mysql-"{{ env }}".manidevops.online
+SHIPPING_HOST: shipping-"{{ env }}".manidevops.online
+RABBITMQ_HOST: rabbitmq-"{{ env }}".manidevops.online
+PAYMENT_HOST: payment-"{{ env }}".manidevops.online
